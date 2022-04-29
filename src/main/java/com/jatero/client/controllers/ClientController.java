@@ -20,7 +20,7 @@ public class ClientController {
 	@Autowired
 	private RestTemplateBuilder restTemplateBuilder;
 
-	//Prepara la llamada al rest
+	//Prepara la llamada al REST service
 	@RequestMapping("/")
 	public String callService() {
 		RestTemplate restTemplate = restTemplateBuilder.build();
